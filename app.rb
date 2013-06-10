@@ -3,5 +3,6 @@ get '/' do
 end
 
 post "/avatar" do
-  params.inspect 
+  @avatar = params[:avatar] 
+  erb :avatar
 end
